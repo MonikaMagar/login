@@ -1,0 +1,167 @@
+/* General Body Styling */
+body {
+  color: white; /* White text color for contrast */
+  font-family: 'Arial', sans-serif;
+
+  background-image: url("https://img.freepik.com/premium-vector/vector-modern-abstract-element-background-geometric-shapes-blue-color_948096-99.jpg?w=996");
+  background-size: cover; /* Makes the background image cover the entire screen */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating of the background image */
+  height: 100vh; /* Ensures the background covers the full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+  background-color: #000; /* Black background for navbar */
+  border-bottom: 2px solid #fff; /* White border for separation */
+}
+
+.navbar-brand {
+  color: white !important; /* White brand text */
+}
+
+.nav-link {
+  color: white !important; /* White link text */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6347 !important; /* Hover color for nav links */
+}
+
+/* Button Styling */
+button {
+  border-radius: 5px;
+}
+
+button.primary {
+  background-color: #000; /* Black background for primary buttons */
+  border: 2px solid #fff;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black text on hover */
+}
+
+/* Input Styling */
+input, select, textarea {
+  background-color: #323c70; /* Dark background for inputs */
+  color: white; /* White text */
+  border: 1px solid #fff; /* White border */
+}
+
+input:focus, select:focus, textarea:focus {
+  background-color: #444; /* Slightly lighter background on focus */
+  border-color: #ff6347; /* Highlight border color on focus */
+}
+
+/* Add a fade-in effect to the text */
+.welcome-text h1 {
+  font-size: 3rem;
+  margin-top: 150px;
+  color: #000;
+  margin-bottom: 10px;
+  opacity: 0; /* Start as invisible */
+  animation: fadeInUp 1.5s ease-out forwards; /* Fade-in and slide-up animation */
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  margin-top: 100px;
+  color: #000;
+  margin-bottom: 30px;
+  opacity: 0; /* Start as invisible */
+  animation: fadeInUp 1.5s ease-out 0.5s forwards; /* Delay animation for p */
+}
+
+/* Animation: Fade in and slide up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start from 30px below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+/* Card / Form Elements */
+.card {
+  background-color: #000000; /* Dark card background */
+  border: 1px solid #444; /* Light border */
+}
+
+.card-header {
+  background-color: #000; /* Black header */
+  color: white;
+}
+
+.card-body {
+  color: rgb(0, 0, 0);
+}
+
+.form-group label {
+  color: #f9f9f9; /* Lighter text for labels */
+}
+
+/* Content Wrapper Styling */
+.content-wrapper {
+  padding: 50px 0;
+}
+
+h1, h2, h3, h4 {
+  color: white; /* White text for headings */
+}
+
+/* Additional custom styling */
+.alert-danger {
+  background-color: #ff4d4d; /* Red alert box */
+}
+
+.alert-success {
+  background-color: #4CAF50; /* Green alert box */
+}
+
+/* App.css */
+
+/* Modal custom styling for dark theme */
+.modal-content {
+  background-color: #080b20; /* Dark background for the form container */
+  color: white; /* White text */
+  border-radius: 8px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #444; /* Darker border */
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Custom button styling inside the modal */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.content-wrapper {
+  padding: 20px;
+}

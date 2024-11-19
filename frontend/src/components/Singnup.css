@@ -1,0 +1,128 @@
+/* Full page layout */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    background-color: #080b20; /* Dark background for the form container */
+}
+
+/* Left section (signup form) */
+.signup-container {
+    max-width: 500px;
+    margin: 0;
+    padding: 30px;
+    background-color: #080b20; /* Dark background for the form container */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Lighter shadow */
+    color: white; /* White text */
+    flex: 0 10% 60%; /* Take 50% of the screen width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+}
+
+/* Form header */
+.signup-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* White text for the header */
+}
+
+/* Success and error messages */
+.alert {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white; /* White text in alerts */
+}
+
+.alert-danger {
+    background-color: #ff4d4d; /* Red background for error messages */
+}
+
+.alert-success {
+    background-color: #4CAF50; /* Green background for success messages */
+}
+
+/* Custom styling for the form controls */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #ccc; /* Light gray text for form labels */
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #444; /* Dark border */
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text inside input fields */
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #ff6347; /* Highlight border on focus */
+    background-color: #444; /* Slightly lighter background on focus */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Right section: Image styling */
+.image-section {
+    flex: 1; /* Takes the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Full viewport height */
+    padding: 0; /* Remove any padding to prevent gaps */
+}
+
+.image-section-img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+}
+
+
+.welcome-text {
+    position: absolute;
+    top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+    .signup-page {
+        flex-direction: column; /* Stack the form and image on smaller screens */
+    }
+
+    .signup-container {
+        width: 100%; /* Full width for the form on small screens */
+    }
+
+    .image-section {
+        display: none; /* Hide the image on small screens */
+    }
+}
